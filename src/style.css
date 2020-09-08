@@ -1,0 +1,54 @@
+body {
+    border: 2px solid;
+    border-color: #ea5455;
+    margin: 75px auto;
+    padding: 50px auto;
+    font-family: "Oswald", sans-serif;
+    display: center;
+    max-width: 550px;
+  }
+  
+  h2,
+  h3,
+  h4 {
+    color: #ea5455;
+    position: static;
+  }
+  
+  h3,
+  h4 {
+    text-align: center;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2d4059;
+  }
+  h2 {
+   
+    position: left;
+    display: inline-flex;
+  }
+  h4 {
+    color: #2d4059;
+  }
+  div.row {
+    position: static;
+  }
+  form.form {
+    text-align: center;
+  }
+  .btn-primary {
+    background-color: #ff935c;
+    border: #ff935c;
+  }
+ 
+h5.currentTime { 
+    text-align: center;
+    color: #2d4059;
+    font-size: 25px;
+}
+a {
+    font-size: 15px;
+    position: inline-block;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 5 HW: Weather and Geolocation into Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+      integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/4ed1401db1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="src/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1 id="display-temperature">
+            Local Weather
+        </h1>       
+<h5 class="currentTime">Time</h5>
+    
+      <br>
+        <div class="row">
+          <div class="col-3"></div>
+          <div class="col-3">
+            
+            <h2>           
+                <i class="fas fa-cloud-sun"></i>
+              <span class="temperature" id="degrees">     </span>         
+              
+            </h2>
+            <br>
+            <span class="units"> 
+                <a href="#" id="celsius-link">°C /</a>
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
+
+          </div>
+  
+          <div class="col-3">
+            <h3 id="humidity">Humidity</h3>
+  
+            <h3 id="wind">Wind</h3>
+            <div class="col-3"></div>
+          </div>
+        </div>
+      </div>
+  
+
+
+      <form action="" class="form">
+        <input type="text" placeholder="Enter Your City" id="city-input"/>
+        <input class="btn btn-primary" type="submit" value="Submit" id="#current-location-button" />
+      </form>
+  
+
+
+      <h4>5 Day Forecast</h4>
+      <h3>
+        Monday 85°
+        <i class="fas fa-sun"></i>
+        <br />
+        Tuesday 75°
+        <i class="fas fa-cloud-sun"></i>
+        <br />
+        Wednesday 65°
+        <i class="fas fa-cloud"></i>
+        <br />
+        Thursday 60°
+        <i class="fas fa-cloud-showers-heavy"></i>
+        <br />
+        Friday 80°
+        <i class="fas fa-cloud-sun"></i>
+      </h3>
+      <script src="src/script.js"></script>
+</body>
+</html>
