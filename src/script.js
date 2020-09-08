@@ -66,8 +66,12 @@ function showWeather(response) {
     let h2 = document.querySelector("#degrees");
     let temperature = Math.round(response.data.main.temp);
     let description = response.data.weather[0].description;
+    let humidity = document.querySelector("#humidity");
+    let wind = document.querySelector("#wind");
     h1.innerHTML = `${description}, in ${response.data.name}`;
     h2.innerHTML = `${temperature}°`;
+    humidity.innerHTML = `${response.data.main.humidity}% Humidity`;
+    wind.innerHTML = Math.round(response.data.wind.speed);
 }
 
 //Submit Button
