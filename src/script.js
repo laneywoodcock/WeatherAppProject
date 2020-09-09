@@ -1,7 +1,6 @@
 //Time
 let now = new Date();
 
-
 let days = [
   "Sunday",
   "Monday",
@@ -36,7 +35,7 @@ let minutes = now.getMinutes();
 let seconds = now.getSeconds();
 
 let h5 = document.querySelector("h5");
-h5.innerHTML = `${day}, ${month} ${date} ${year} ${hour}:${minutes}:${seconds}`;
+h5.innerHTML = `${day}, ${month} ${date}, ${year} ${hour}:${minutes}`;
 
 function formatDate(date) {
   console.log(date.getDate());
@@ -68,14 +67,16 @@ function showWeather(response) {
     let description = response.data.weather[0].description;
     let humidity = document.querySelector("#humidity");
     let wind = document.querySelector("#wind");
+    let icon = document.querySelector("#icon");
+
     h1.innerHTML = `${description}, in ${response.data.name}`;
     h2.innerHTML = `${temperature}°`;
     humidity.innerHTML = `${response.data.main.humidity}% Humidity`;
     wind.innerHTML = Math.round(response.data.wind.speed);
+    icon.setAttribute("src", `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
 }
 
 //Submit Button
-
 function searchWeather(event) {
   event.preventDefault();
   let input = document.querySelector("#city-input");

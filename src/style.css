@@ -25,16 +25,24 @@ body {
     color: #2d4059;
   }
   h2 {
-   
     position: left;
     display: inline-flex;
-  }
+    }
+span.temperature {
+  padding-top: 30px;
+}
+
   h4 {
     color: #2d4059;
   }
   div.row {
     position: static;
   }
+
+  a.conversion {
+    padding-left: 100px;
+  }
+
   form.form {
     text-align: center;
   }
@@ -51,7 +59,4 @@ h5.currentTime {
 a {
     font-size: 15px;
     position: inline-block;
-}
-h4 .shareCode {
-   font-size: 10px;
 }
