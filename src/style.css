@@ -18,7 +18,9 @@ body {
   h3,
   h4 {
     text-align: center;
+    font-size: 26px;
   }
+  
   
   h1 {
     text-align: center;
@@ -39,9 +41,6 @@ span.temperature {
     position: static;
   }
 
-  a.conversion {
-    padding-left: 100px;
-  }
 
   form.form {
     text-align: center;
